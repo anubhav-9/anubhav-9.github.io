@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   
 .button {
@@ -16,14 +16,15 @@
   margin-left: auto;
   margin-top: 15px;
   margin-right: auto;
-  border-radius: 5px
+  border-radius: 5px;
+  display: block;
 } 
-@media screen and (max-width:480px) {
+@media only screen and (max-width:600px) {
   .button {
-    font-size: 3.3em;
-    padding: 200px;
+    display: block;
+    font-size: 1.0em;
+    padding: 20px;
     font-style: bold;
-    padding: 300px;
   } }
 div.ex{
   max-width: 600px;
@@ -39,12 +40,11 @@ div.ex{
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
   }
-  @media screen and (max-width: 540px) {
+  @media only screen and (max-width: 600px) {
   div.ex {
-    max-width: 100%;
-    margin-left:auto;
-    margin-right:auto;
-  }
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;}
 }
 div.ex0 {
   /*max-width: 100%;*/
